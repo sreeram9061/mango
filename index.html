@@ -8,7 +8,22 @@
 </head>
 <body>
     <div>
+        <div id="1st" style="height: 100px; width: 200px; background-color: green; display: none;"></div>
+        <div id="2nd" style="height: 100px; width: 200px; background-color:black;"></div>
+
         
-    </div>
+        
+    </div><script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $("#2nd").hover(function(){
+              $("#1st").fadeIn()
+            },function(){
+              
+                $("#1st").fadeout()
+                
+              })
+            })
+    </script>
 </body>
 </html>
